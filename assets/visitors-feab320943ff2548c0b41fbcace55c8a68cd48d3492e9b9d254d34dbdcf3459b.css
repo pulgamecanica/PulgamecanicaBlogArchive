@@ -1,0 +1,1353 @@
+@font-face {
+  font-family: 'AdventPro Regular';
+  src: url(AdventPro-Regular-5d0a7796be6dbe0291f0b65779ad99621cbab8ce2884428a9b07a1d50027d96d.ttf);
+}
+
+@font-face {
+  font-family: 'AdventPro Bold';
+  src: url(AdventPro-Bold-c0b99b2b0f1da492ee5e8aad678cc3cb705a6df37929e7a0bd9ae8ca25001caf.ttf);
+}
+
+@font-face {
+  font-family: 'AdventPro ExtraLight';
+  src: url(AdventPro-ExtraLight-5ddb0288506251537f110c593a1f234202eb7f7982a17a239bfd602066a5b13d.ttf);
+}
+
+@font-face {
+  font-family: 'AdventPro Medium';
+  src: url(AdventPro-Medium-8af624a40e720b26f968c19d596246155eb0a5b3321dd8e78d889ea0fbe0b152.ttf);
+}
+
+@font-face {
+  font-family: 'AdventPro SemiBold';
+  src: url(AdventPro-SemiBold-2c853b5186a0c7b5c82649b271c47d0b3e82407016592b71abc72b2a329b02e3.ttf);
+}
+
+@font-face {
+  font-family: 'AdventPro Thin';
+  src: url(AdventPro-Thin-ad299923540d869814d79a503b868aa2af5936a114dd61af015390d8998e7761.ttf);
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond Regular';
+  src: url(CormorantGaramond-Regular-80ca2c2ee767770a43249fa77eff1eb5beeba7defae6c9d83211dcf48e9cfa25.ttf);
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond Bold';
+  src: url(CormorantGaramond-Bold-c485388d0fc96535e812c42c0d3671bd1c28fceee6d318aa54cb507a05bd7c3e.ttf);
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond ExtraLight';
+  src: url(http://127.0.0.1:3000/CormorantGaramond-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond Medium';
+  src: url(CormorantGaramond-Medium-513aa3f80a59f36ab81457c8c131b53dfdcd009772c0ee1ef5101f9592aa55e4.ttf);
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond SemiBold';
+  src: url(CormorantGaramond-SemiBold-853830e578dddbe0370328ec8d4ada58aa647d284f2ba5e2496c5a315d541ced.ttf);
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond Thin';
+  src: url(http://127.0.0.1:3000/CormorantGaramond-Thin.ttf);
+}
+
+/* line 62, app/assets/stylesheets/visitors.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 66, app/assets/stylesheets/visitors.scss */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 90vh;
+}
+
+/* line 72, app/assets/stylesheets/visitors.scss */
+:root {
+  --dark: #121212;
+}
+
+/* line 80, app/assets/stylesheets/visitors.scss */
+.box svg * {
+  stroke: var(--dark);
+}
+
+/* line 85, app/assets/stylesheets/visitors.scss */
+.p-3 {
+  padding: 0.3em !important;
+}
+
+/* line 89, app/assets/stylesheets/visitors.scss */
+.pb-1 {
+  padding-bottom: 0.5rem;
+}
+
+/* line 93, app/assets/stylesheets/visitors.scss */
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+/* line 97, app/assets/stylesheets/visitors.scss */
+.bg-dark {
+  background-color: var(--dark);
+}
+
+/* line 101, app/assets/stylesheets/visitors.scss */
+.bg-silver {
+  background-color: #424242;
+}
+
+/* line 104, app/assets/stylesheets/visitors.scss */
+.trix-content {
+  width: 100%;
+  word-break: break-word;
+}
+
+/* line 109, app/assets/stylesheets/visitors.scss */
+.hobbit-svg, .dwarf-svg, .men-svg, .elf-svg {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* line 110, app/assets/stylesheets/visitors.scss */
+.hobbit-svg.active, .dwarf-svg.active, .men-svg.active, .elf-svg.active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 117, app/assets/stylesheets/visitors.scss */
+.hobbit-svg:hover, .dwarf-svg:hover, .men-svg:hover, .elf-svg:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* line 122, app/assets/stylesheets/visitors.scss */
+.hobbit-svg svg {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+/* line 127, app/assets/stylesheets/visitors.scss */
+.dwarf-svg svg {
+  width: 36px !important;
+  height: 36px !important;
+}
+
+/* line 132, app/assets/stylesheets/visitors.scss */
+.men-svg svg {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+/* line 137, app/assets/stylesheets/visitors.scss */
+.elf-svg svg {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+/* line 142, app/assets/stylesheets/visitors.scss */
+#visitors-layout {
+  font-family: 'Cormorant Garamond Medium';
+  font-size: 150%;
+}
+
+/* line 145, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav {
+  position: fixed;
+  top: 0;
+  background-color: #193747;
+  background-image: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  word-break: break-word;
+  max-width: 25vw;
+  min-width: 20vw;
+  height: 100vh;
+  box-shadow: 0 1px 10px 4px #3A3A3A;
+  z-index: 100;
+}
+
+/* line 165, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav:hover {
+  background-image: url(cat2-4a309c2f1fbe9efb6141173429c5ac9c43805b782c8878aea7d34bb0d6bacb2a.gif);
+}
+
+/* line 168, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav header > h1 > hr {
+  background-color: #949596;
+  border: none;
+  color: gray;
+  margin: 0.25rem auto;
+  width: 75%;
+  height: 0.25rem;
+  border-radius: 1rem;
+}
+
+/* line 177, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav header > h1 {
+  margin: 0.5rem;
+}
+
+/* line 179, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav header > h1 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 183, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav header > h1:hover hr {
+  background-color: white;
+}
+
+/* line 187, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav header > h6 {
+  margin: 0;
+}
+
+/* line 190, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > header > #logo {
+  cursor: pointer;
+}
+
+/* line 193, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > header > #logo #svg_logo {
+  transition: ease-out;
+}
+
+/* line 195, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > header > #logo #svg_logo:hover {
+  animation: example 2s linear infinite;
+}
+
+/* line 199, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > header > #logo:active #svg_logo {
+  display: none;
+}
+
+/* line 202, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > header > #logo:active #svg_splash {
+  display: inline;
+}
+
+/* line 205, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > header > #logo #svg_splash {
+  display: none;
+}
+
+@keyframes example {
+  0% {
+    transform: translate(5px, -5px);
+  }
+  25% {
+    transform: translate(30px, -10px);
+  }
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  100% {
+    transform: translate(10px, -5px);
+  }
+}
+
+/* line 216, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav section, #visitors-layout > nav footer {
+  padding: 0.25rem;
+  display: block;
+}
+
+/* line 220, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > footer {
+  width: 70%;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: bottom;
+}
+
+/* line 230, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > footer a {
+  border-radius: 1rem;
+}
+
+/* line 232, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > footer a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* line 235, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav > footer a svg {
+  padding: 0.5rem;
+  width: 25px;
+  height: 25px;
+}
+
+/* line 243, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav section h4 {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  border-bottom: 2px #949596 solid;
+  padding: 0.5rem;
+}
+
+/* line 249, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav section h4 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* line 253, app/assets/stylesheets/visitors.scss */
+#visitors-layout > nav section h4:hover {
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: white;
+}
+
+/* line 261, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main {
+  position: relative;
+  min-height: 100%;
+  margin-left: 25vw;
+  padding: 1rem;
+}
+
+/* line 266, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main > #main-nav-bar {
+  transition: top 0.3s;
+  -webkit-box-shadow: 0 8px 6px -6px lightgray;
+  -moz-box-shadow: 0 8px 6px -6px lightgray;
+  box-shadow: 0 8px 6px -6px lightgray;
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 52%;
+  height: 5rem;
+  z-index: 110;
+}
+
+/* line 278, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main > #main-nav-bar > section {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+
+/* line 283, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main > #main-nav-bar > section #search-input {
+  display: none;
+  width: 95%;
+  height: 95%;
+  font-size: 2.5rem;
+  border: none;
+}
+
+/* line 290, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main > #main-nav-bar > section button {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid lightgray;
+  padding: 1rem 1.5rem;
+  height: 100%;
+  margin: 0;
+}
+
+/* line 297, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main > #main-nav-bar > section button:hover {
+  cursor: pointer;
+  background-color: rgba(150, 150, 150, 0.6);
+}
+
+/* line 302, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main > #main-nav-bar > section button:last-child {
+  border-right: none;
+}
+
+/* line 308, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth {
+  padding: 1rem;
+  margin-top: 6rem;
+}
+
+/* line 312, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .if_i_take_one_more_step_it_ll_be_the_farthest_away_from_home_you_have_ever_been {
+  background-color: lightgray;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* line 316, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .if_i_take_one_more_step_it_ll_be_the_farthest_away_from_home_you_have_ever_been svg {
+  fill: gray;
+}
+
+/* line 319, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .if_i_take_one_more_step_it_ll_be_the_farthest_away_from_home_you_have_ever_been:hover {
+  background-color: darkgray;
+}
+
+/* line 322, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .if_i_take_one_more_step_it_ll_be_the_farthest_away_from_home_you_have_ever_been:hover svg {
+  fill: black;
+}
+
+/* line 327, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .go_where_you_must_go_and_hope {
+  border: none;
+  padding: 0;
+  border-radius: 1rem;
+}
+
+/* line 331, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .go_where_you_must_go_and_hope a p {
+  padding: 1rem !important;
+}
+
+/* line 334, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .go_where_you_must_go_and_hope span {
+  padding: 1rem;
+}
+
+/* line 338, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .breadcrumb, #visitors-layout > main .middle-earth .breadcrumb a {
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.2rem;
+  color: #858585;
+  text-decoration: none;
+}
+
+/* line 344, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .breadcrumb .light-text, #visitors-layout > main .middle-earth .breadcrumb a .light-text {
+  opacity: 0.6;
+}
+
+/* line 349, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container {
+  /* FONT SIZES */
+  /* FONT COLORS */
+  /* Disable ugly links in the container */
+  /* Flex Columns */
+  /* Container Flex Templates */
+  /* SHIRE */
+  /*  ___________ */
+  /* | ////      |*/
+  /* | ////      |*/
+  /* | ////      |*/
+  /*  ----------- */
+  /* BYWATER */
+  /*  ___________ */
+  /* |///     ///|*/
+  /* |///     ///|*/
+  /* |///     ///|*/
+  /*  ----------- */
+  /* MORIA */
+  /*  ___________ */
+  /* |       ////|*/
+  /* |       ////|*/
+  /* |       ////|*/
+  /*  ----------- */
+  /* ROHAN */
+  /*  ___________ */
+  /* | ////    XX|*/
+  /* | ////    XX|*/
+  /* |  .......XX|*/
+  /* |  ..IMG..XX|*/
+  /* |  .......XX|*/
+  /* | ////    XX|*/
+  /*  ----------- */
+  /* MIRKWOOD */
+  /*  ___________ */
+  /* | ///T      |*/
+  /* | ///T      |*/
+  /* | ///T      |*/
+  /* | ////      |*/
+  /* | --------- |*/
+  /*  ----------- */
+  /* GONDOR */
+  /*  ___________ */
+  /* |    ///    |*/
+  /* |    ///    |*/
+  /* |    ///    |*/
+  /* |    ///    |*/
+  /*  ----------- */
+}
+
+/* line 351, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .book-of-mazarbul {
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+/* line 355, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .book-of-mazarbul p {
+  padding: 0.5rem;
+  margin: 0;
+  border-radius: 1rem;
+}
+
+/* line 360, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .book-of-mazarbul p:hover svg {
+  fill: #b6babc;
+}
+
+/* line 367, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .ent-draught, #visitors-layout > main .middle-earth .middle-earth-container .lembas, #visitors-layout > main .middle-earth .middle-earth-container .honey-cake, #visitors-layout > main .middle-earth .middle-earth-container .cram, #visitors-layout > main .middle-earth .middle-earth-container .petty-dwarf-roots, #visitors-layout > main .middle-earth .middle-earth-container .orc-vitality-drink {
+  text-transform: uppercase;
+  word-break: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 373, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .ent-draught {
+  font-size: 75px;
+  font-weight: bolder;
+}
+
+/* line 377, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .lembas {
+  font-size: 65px;
+  font-weight: bold;
+}
+
+/* line 381, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .honey-cake {
+  font-size: 50px;
+  font-weight: normal;
+}
+
+/* line 385, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .cram {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+/* line 389, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .petty-dwarf-roots {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+/* line 393, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .orc-vitality-drink {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+/* line 398, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .arkenstone {
+  color: #b6babc;
+}
+
+/* line 401, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .elfstone {
+  color: #73be64;
+}
+
+/* line 404, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .nauglamir {
+  color: #c81e13;
+}
+
+/* line 407, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .silmaril {
+  color: #383838;
+}
+
+/* line 410, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .phial_of_galadriel {
+  color: #e0e0e0;
+}
+
+/* line 414, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* line 418, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container a:hover > div {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+@media screen and (min-width: 900px) {
+  /* line 425, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .helcaraxe .shire, #visitors-layout > main .middle-earth .middle-earth-container .helcaraxe .argonath-column .sword, #visitors-layout > main .middle-earth .middle-earth-container .helcaraxe .argonath-column .axe {
+    width: 50vw;
+  }
+  /* line 428, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .helcaraxe .petty-dwarf-roots, #visitors-layout > main .middle-earth .middle-earth-container .helcaraxe .side-description {
+    font-size: 20px;
+  }
+  /* line 431, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .helcaraxe .ent-draught {
+    font-size: 75px;
+  }
+  /* line 436, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .utumno .shire, #visitors-layout > main .middle-earth .middle-earth-container .utumno .argonath-column .sword, #visitors-layout > main .middle-earth .middle-earth-container .utumno .argonath-column .axe {
+    width: 15vw;
+  }
+  /* line 439, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .utumno .petty-dwarf-roots, #visitors-layout > main .middle-earth .middle-earth-container .utumno .side-description {
+    font-size: 20px !important;
+  }
+  /* line 442, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .utumno .ent-draught {
+    font-size: 30px;
+  }
+}
+
+/* line 448, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .argonath-column {
+  margin: 0;
+  padding: 1;
+  /* BACKGROUND IMAGE */
+}
+
+/* line 452, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .argonath-column .sword, #visitors-layout > main .middle-earth .middle-earth-container .argonath-column .axe {
+  text-align: center;
+  width: 50vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* line 460, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .argonath-column .sword {
+  height: 30vh;
+}
+
+/* line 463, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .argonath-column .axe {
+  height: 60vh;
+}
+
+/* line 467, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .dead-marshes {
+  text-decoration: 3px underline;
+}
+
+@media screen and (min-width: 900px) {
+  /* line 474, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .valinior, #visitors-layout > main .middle-earth .middle-earth-container .shire, #visitors-layout > main .middle-earth .middle-earth-container .bywater, #visitors-layout > main .middle-earth .middle-earth-container .moria, #visitors-layout > main .middle-earth .middle-earth-container .rohan, #visitors-layout > main .middle-earth .middle-earth-container .mirkwood, #visitors-layout > main .middle-earth .middle-earth-container .gondor {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* line 478, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .valinior.utumno {
+    max-width: 80%;
+    justify-content: center;
+    align-items: start;
+    gap: 3rem;
+  }
+}
+
+/* line 491, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .shire {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+/* line 503, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .bywater {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+/* line 514, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .moria {
+  width: 100%;
+  align-items: flex-end;
+}
+
+/* line 517, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .moria > .side-description {
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  word-break: break-word;
+  border-left: 1.5px lightgray solid;
+}
+
+/* line 533, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .rohan {
+  margin: 1rem 0;
+  width: 100%;
+  overflow: hidden;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 1rem;
+  width: 50vw;
+}
+
+/* line 541, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .rohan > img {
+  margin: auto;
+  width: 50vw;
+  padding: 1rem;
+  height: auto;
+}
+
+/* line 547, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .rohan pre {
+  width: 50vw;
+}
+
+/* line 551, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .edoras {
+  gap: 0.25rem;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.75rem;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+/* line 558, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .edoras .saddle {
+  display: flex;
+  gap: 0.25rem;
+  border-radius: 0.25rem;
+  height: 20px;
+  padding: 0 0.25rem;
+  font-size: 15px;
+  align-items: center;
+}
+
+/* line 566, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .edoras .saddle svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* line 572, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .mordor {
+  justify-content: space-around !important;
+  text-align: center;
+  width: 90%;
+  gap: 2rem;
+  position: relative;
+}
+
+/* line 580, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul {
+  background-color: rgba(230, 200, 184, 0.5);
+  border-radius: 1rem;
+  min-height: 200px;
+  min-width: 20vw;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 12px 12px 2px 1px rgba(154, 209, 208, 0.2);
+}
+
+/* line 590, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul:hover {
+  transform: scale(0.99);
+}
+
+/* line 593, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul .sword {
+  text-align: center;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+
+/* line 601, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul .sword {
+  background-color: rgba(25, 71, 72, 0.75);
+  height: 15vh;
+  transition: 1s ease-in;
+}
+
+/* line 605, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul .sword:hover {
+  height: 30vh;
+}
+
+/* line 609, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul .axe {
+  margin-top: 0.5rem;
+  font-size: 30px;
+  border-bottom: 1px gray solid;
+  margin-bottom: 0;
+  display: inline;
+}
+
+/* line 616, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul .shield {
+  max-width: 300px;
+  font-size: 20px;
+  display: block;
+  padding: 0.5rem 0;
+  margin: auto;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* line 625, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul .dagger {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  background-color: rgba(25, 55, 71, 0.9);
+}
+
+/* line 630, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .minas-morgul .dagger:hover svg {
+  fill: white;
+}
+
+/* line 635, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron {
+  cursor: auto;
+  position: relative;
+  min-width: 60vw;
+  min-height: 80vh;
+  border-radius: 0.25rem;
+  background-color: rgba(242, 242, 242, 0.95);
+  overflow: scroll;
+}
+
+/* line 643, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .sword {
+  height: 60%;
+  width: 100%;
+  border-radius: 0.25rem 0.25rem 0 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+}
+
+/* line 653, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .north-downs {
+  position: absolute;
+  top: 0%;
+}
+
+/* line 657, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .elendilmir {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding-right: 1rem;
+}
+
+/* line 662, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .elendilmir img {
+  width: 20px;
+  height: auto;
+}
+
+/* line 667, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .azog {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+}
+
+/* line 675, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .thror {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: wrap;
+  font-size: 20px;
+  gap: 0.5rem;
+  width: 40%;
+}
+
+/* line 683, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .thror svg {
+  display: block;
+  height: 20px;
+}
+
+/* line 687, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .thror a, #visitors-layout > main .middle-earth .middle-earth-container .sauron .thror svg {
+  padding: 0.15rem;
+  border-radius: 0.15rem;
+  background-color: rgba(210, 220, 255, 0.5);
+}
+
+/* line 693, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .mount-doom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  background-color: rgba(42, 42, 42, 0.6);
+  border-radius: 0.5rem;
+}
+
+/* line 703, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .mount-doom:hover svg * {
+  fill: darkgray;
+}
+
+/* line 706, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .sauron .mount-doom svg * {
+  fill: white;
+}
+
+/* line 719, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .mirkwood {
+  overflow: hidden;
+  align-items: start;
+  text-align: right;
+  margin-left: auto;
+}
+
+/* line 724, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .mirkwood section ul {
+  padding-right: 5px;
+  list-style: none;
+  min-height: 3rem;
+  padding-left: 0.5rem;
+  word-break: break-word;
+  border-right: 2px lightgray solid;
+}
+
+/* line 732, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .mirkwood section ul li {
+  padding: 2rem;
+}
+
+/* line 743, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container .gondor {
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* line 749, app/assets/stylesheets/visitors.scss */
+#visitors-layout > main .middle-earth .middle-earth-container footer {
+  border-top: 1.5px lightgray solid;
+  padding: 1rem;
+  width: 90%;
+  text-align: center;
+}
+
+/* line 760, app/assets/stylesheets/visitors.scss */
+#visitors-layout .markdown {
+  font-size: 85%;
+}
+
+/* line 763, app/assets/stylesheets/visitors.scss */
+#visitors-layout .markdown .p-1 {
+  padding: 0.1em;
+}
+
+/* line 766, app/assets/stylesheets/visitors.scss */
+#visitors-layout .markdown .rounded {
+  border-radius: 0.25em;
+}
+
+/* line 770, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+/* line 776, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table th,
+#visitors-layout .table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+/* line 783, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+/* line 788, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+/* line 792, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-sm th,
+#visitors-layout .table-sm td {
+  padding: 0.3rem;
+}
+
+/* line 797, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+/* line 801, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-bordered th,
+#visitors-layout .table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+/* line 806, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-bordered thead th,
+#visitors-layout .table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+/* line 811, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-borderless th,
+#visitors-layout .table-borderless td,
+#visitors-layout .table-borderless thead th,
+#visitors-layout .table-borderless tbody + tbody {
+  border: 0;
+}
+
+/* line 818, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* line 822, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+/* line 827, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-light,
+#visitors-layout .table-light > th,
+#visitors-layout .table-light > td {
+  background-color: #fdfdfe;
+}
+
+/* line 833, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-light th,
+#visitors-layout .table-light td,
+#visitors-layout .table-light thead th,
+#visitors-layout .table-light tbody + tbody {
+  border-color: #fbfcfc;
+}
+
+/* line 840, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-hover .table-light:hover {
+  background-color: #ececf6;
+}
+
+/* line 844, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-hover .table-light:hover > td,
+#visitors-layout .table-hover .table-light:hover > th {
+  background-color: #ececf6;
+}
+
+/* line 849, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-dark,
+#visitors-layout .table-dark > th,
+#visitors-layout .table-dark > td {
+  background-color: #c6c8ca;
+}
+
+/* line 855, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-dark th,
+#visitors-layout .table-dark td,
+#visitors-layout .table-dark thead th,
+#visitors-layout .table-dark tbody + tbody {
+  border-color: #95999c;
+}
+
+/* line 862, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-hover .table-dark:hover {
+  background-color: #b9bbbe;
+}
+
+/* line 866, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-hover .table-dark:hover > td,
+#visitors-layout .table-hover .table-dark:hover > th {
+  background-color: #b9bbbe;
+}
+
+@media (max-width: 575.98px) {
+  /* line 873, app/assets/stylesheets/visitors.scss */
+  #visitors-layout .table-responsive-sm {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* line 879, app/assets/stylesheets/visitors.scss */
+  #visitors-layout .table-responsive-sm > .table-bordered {
+    border: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* line 885, app/assets/stylesheets/visitors.scss */
+  #visitors-layout .table-responsive-md {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* line 891, app/assets/stylesheets/visitors.scss */
+  #visitors-layout .table-responsive-md > .table-bordered {
+    border: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  /* line 897, app/assets/stylesheets/visitors.scss */
+  #visitors-layout .table-responsive-lg {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* line 903, app/assets/stylesheets/visitors.scss */
+  #visitors-layout .table-responsive-lg > .table-bordered {
+    border: 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  /* line 909, app/assets/stylesheets/visitors.scss */
+  #visitors-layout .table-responsive-xl {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  /* line 915, app/assets/stylesheets/visitors.scss */
+  #visitors-layout .table-responsive-xl > .table-bordered {
+    border: 0;
+  }
+}
+
+/* line 920, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 927, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-responsive > .table-bordered {
+  border: 0;
+}
+
+/* line 931, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 938, app/assets/stylesheets/visitors.scss */
+#visitors-layout .table-responsive > .table-bordered {
+  border: 0;
+}
+
+/* line 943, app/assets/stylesheets/visitors.scss */
+#visitors-layout .dialog svg {
+  width: 32px;
+  height: 32px;
+}
+
+/* line 947, app/assets/stylesheets/visitors.scss */
+#visitors-layout .dialog .dialog-body {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* line 957, app/assets/stylesheets/visitors.scss */
+#visitors-layout .dialog .dialog-body, #visitors-layout .dialog .dialog-body-show {
+  cursor: zoom-out;
+  z-index: 111;
+  background-color: rgba(42, 42, 42, 0.6);
+}
+
+/* line 961, app/assets/stylesheets/visitors.scss */
+#visitors-layout .dialog .dialog-body .body, #visitors-layout .dialog .dialog-body-show .body {
+  cursor: auto;
+  min-width: 30vw;
+  min-height: 20vh;
+  border-radius: 0.25rem;
+  background-color: rgba(242, 242, 242, 0.95);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 973, app/assets/stylesheets/visitors.scss */
+#visitors-layout .dialog .dialog-body .body select, #visitors-layout .dialog .dialog-body-show .body select {
+  min-width: 50%;
+  min-height: 150px;
+}
+
+@media screen and (max-width: 900px) {
+  /* line 983, app/assets/stylesheets/visitors.scss */
+  #grid-controller {
+    display: none;
+  }
+  /* line 987, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > nav {
+    display: none;
+  }
+  /* line 990, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main {
+    padding: 0;
+    margin-left: 0;
+  }
+  /* line 991, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main > #main-nav-bar {
+    width: 100%;
+  }
+  /* line 994, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main > nav {
+    width: 100%;
+    border-radius: 0;
+  }
+  /* line 1000, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth {
+    padding: 0;
+  }
+  /* line 1002, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .breadcrumb, #visitors-layout > main .middle-earth .if_i_take_one_more_step_it_ll_be_the_farthest_away_from_home_you_have_ever_been {
+    margin-left: 1rem;
+  }
+  /* line 1006, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .sauron {
+    width: 100vw;
+  }
+  /* line 1008, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .sauron .elendilmir {
+    top: 30%;
+  }
+  /* line 1011, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .sauron .azog {
+    top: 40%;
+  }
+  /* line 1015, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .book-of-mazarbul {
+    display: none;
+  }
+  /* line 1018, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .argonath-column {
+    width: 100vw;
+  }
+  /* line 1021, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .ent-draught, #visitors-layout > main .middle-earth .middle-earth-container .lembas, #visitors-layout > main .middle-earth .middle-earth-container .honey-cake, #visitors-layout > main .middle-earth .middle-earth-container .cram, #visitors-layout > main .middle-earth .middle-earth-container .petty-dwarf-roots, #visitors-layout > main .middle-earth .middle-earth-container .orc-vitality-drink {
+    padding: 0 1rem;
+  }
+  /* line 1024, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container * .sword, #visitors-layout > main .middle-earth .middle-earth-container * .axe {
+    border-radius: 0 !important;
+    padding: 0;
+    max-height: 30vh;
+    width: 100vw !important;
+  }
+  /* line 1030, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .rohan {
+    width: 100vw !important;
+    overflow: hidden;
+  }
+  /* line 1033, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .rohan > div {
+    padding: 1rem;
+    margin: auto;
+  }
+  /* line 1037, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .rohan > img {
+    width: 85vw;
+  }
+  /* line 1040, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .rohan pre {
+    width: 95vw;
+  }
+  /* line 1044, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .shire {
+    margin-top: 0;
+  }
+  /* line 1048, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .mirkwood > section {
+    display: none;
+  }
+  /* line 1052, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .mordor {
+    width: 100vw;
+  }
+  /* line 1055, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .moria {
+    padding: 0;
+  }
+  /* line 1057, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container .moria .side-description:before {
+    content: "DESCRIPTION";
+    display: block;
+    color: gray;
+    font-size: 70%;
+  }
+  /* line 1064, app/assets/stylesheets/visitors.scss */
+  #visitors-layout > main .middle-earth .middle-earth-container footer {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* line 1073, app/assets/stylesheets/visitors.scss */
+.loading-indicator {
+  padding: 4rem;
+}
+
+/* line 1075, app/assets/stylesheets/visitors.scss */
+.loading-indicator img {
+  width: 50px;
+}
+
+/* line 1079, app/assets/stylesheets/visitors.scss */
+.hidden {
+  display: none;
+}

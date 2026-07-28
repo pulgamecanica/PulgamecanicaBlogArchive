@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pulgamecanica's Web</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="w3Ya-3Ba_wgxthuG131v4E6HbROsHpcqcTnKWPI8gvdCThmWJUMUJeaJMn5HJPI-hF4NElIL5N-TcAwvADwXKw" />
+    
+
+    <link rel="stylesheet" href="http://127.0.0.1:3000/assets/application-523b9745d68ec2b653f3e6d40757ef3311a89d5941e0b89adf9928755de64ffc.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-46e389242f4e4e41d47749af980868e26bcf68bc878bf1fa71667fb75038eaa4.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-c85b4c5406dd49df1f63e03a5b07120d39cc3e33bc2448f5e926b80514f9dfc8.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-dd364f16ec9504dfb72672295637a1c8838773b01c0b441bd41008124c407894.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js",
+    "trix": "/assets/trix-b6d103912a6c8078fed14e45716425fb78de5abfbe7b626cd5d9b25b35265066.js",
+    "@rails/actiontext": "/assets/actiontext-78de0ebeae470799f9ec25fd0e20ae2d931df88c2ff9315918d1054a2fca2596.js",
+    "sortablejs": "https://ga.jspm.io/npm:sortablejs@1.15.0/modular/sortable.esm.js",
+    "controllers/application": "/assets/controllers/application-ad5adfbf641d1b9aab64e757324105992e97ad6ad3d6e494d108e5fa9e744d90.js",
+    "controllers/close_controller": "/assets/controllers/close_controller-cd605b76a80eaf52003f6e5ca254e327512b693fe57b234a29a4da045ddc6338.js",
+    "controllers/dialog_controller": "/assets/controllers/dialog_controller-35f87cd2a9dea2627642265c919922cf22c97bddc023d3395e13a467af72ccb4.js",
+    "controllers/elements_controller": "/assets/controllers/elements_controller-7859e9fd1cbbbb20536eb9abeaffd8a8737f370eeb1eef2f917ff98ea1e348e6.js",
+    "controllers/filter_controller": "/assets/controllers/filter_controller-bb1d7c94b97bacf4aaf24050c9fd34bc52d79a8f015137d436014873d08d1b82.js",
+    "controllers/grid_controller": "/assets/controllers/grid_controller-17d357c60d251ca6d4dd07b6c28a4f90c5fc552eb0225a5174a7665982c85216.js",
+    "controllers": "/assets/controllers/index-73bbbe9c11998b7a5461a6811cfe0b06e0a0e491db19cecdac4294b1496d8fd7.js",
+    "controllers/markdown_controller": "/assets/controllers/markdown_controller-548bfb7b03ccfbd61f402b8cbeaeb11cd2b4db39dd8c46f704e25c0b8afca193.js",
+    "controllers/page_controller": "/assets/controllers/page_controller-7c50f6fec5668ed6d46a896a8517ec6ef2c61a024fae042fd8c19623c7f9d8b2.js",
+    "controllers/publish_controller": "/assets/controllers/publish_controller-76838b3527ee2b61303ca48911e80907b3f771329b32ffa0caeb83beeaa97dec.js",
+    "controllers/search_controller": "/assets/controllers/search_controller-333d09b2688e7ad8c8bfe9dea5bafbd27c1d4d865143f75785ab5e7de9a6baf7.js"
+  }
+}</script>
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/application-46e389242f4e4e41d47749af980868e26bcf68bc878bf1fa71667fb75038eaa4.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/turbo.min-c85b4c5406dd49df1f63e03a5b07120d39cc3e33bc2448f5e926b80514f9dfc8.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/stimulus.min-dd364f16ec9504dfb72672295637a1c8838773b01c0b441bd41008124c407894.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/stimulus-loading-3576ce92b149ad5d6959438c6f291e2426c86df3b874c525b30faad51b0d96b3.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/trix-b6d103912a6c8078fed14e45716425fb78de5abfbe7b626cd5d9b25b35265066.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/actiontext-78de0ebeae470799f9ec25fd0e20ae2d931df88c2ff9315918d1054a2fca2596.js">
+<link rel="modulepreload" href="https://ga.jspm.io/npm:sortablejs@1.15.0/modular/sortable.esm.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/application-ad5adfbf641d1b9aab64e757324105992e97ad6ad3d6e494d108e5fa9e744d90.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/close_controller-cd605b76a80eaf52003f6e5ca254e327512b693fe57b234a29a4da045ddc6338.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/dialog_controller-35f87cd2a9dea2627642265c919922cf22c97bddc023d3395e13a467af72ccb4.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/elements_controller-7859e9fd1cbbbb20536eb9abeaffd8a8737f370eeb1eef2f917ff98ea1e348e6.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/filter_controller-bb1d7c94b97bacf4aaf24050c9fd34bc52d79a8f015137d436014873d08d1b82.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/grid_controller-17d357c60d251ca6d4dd07b6c28a4f90c5fc552eb0225a5174a7665982c85216.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/index-73bbbe9c11998b7a5461a6811cfe0b06e0a0e491db19cecdac4294b1496d8fd7.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/markdown_controller-548bfb7b03ccfbd61f402b8cbeaeb11cd2b4db39dd8c46f704e25c0b8afca193.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/page_controller-7c50f6fec5668ed6d46a896a8517ec6ef2c61a024fae042fd8c19623c7f9d8b2.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/publish_controller-76838b3527ee2b61303ca48911e80907b3f771329b32ffa0caeb83beeaa97dec.js">
+<link rel="modulepreload" href="http://127.0.0.1:3000/assets/controllers/search_controller-333d09b2688e7ad8c8bfe9dea5bafbd27c1d4d865143f75785ab5e7de9a6baf7.js">
+<script type="module">import "application"</script>
+  </head>
+
+  <body>
+    <div class="errors-animation-container">
+      <div class="curtain" data-controller="close" data-action="click->close#closeAnimation"></div>
+      <div class="errors-animation" id="closeAnimationsDialog">
+        <div class="scene">
+          <div class="cube">
+            <div class="cube__face cube__face--front">
+              <div class="text-light">
+                <h1>404</h1>
+              </div>
+            </div>
+            <div class="cube__face cube__face--back">
+              <div><img src="http://127.0.0.1:3000/assets/gandalf-3a0ae9ae38a4a9437eb5eb055352b99b7e5d7c85e6809286d8a1c142644c97ee.gif" /></div>
+            </div>
+            <div class="cube__face cube__face--right">
+              <div><img src="http://127.0.0.1:3000/assets/appa-6f5dc097081d456c237be8000e20329456c4847f956aec845355cebd101e858c.gif" /></div>
+            </div>
+            <div class="cube__face cube__face--left">
+              <div><img src="http://127.0.0.1:3000/assets/totoro-134f09435333c347be2526144fa216c08f1283feec3f6e72bff1d9909afd8fce.gif" /></div>
+            </div>
+            <div class="cube__face cube__face--top">
+              <div><img src="http://127.0.0.1:3000/assets/cello-7facfb07ecaf4c1600b01c16f4182c7251e5dedd0e830df8c090c603e0219bd8.gif" /></div>
+            </div>
+            <div class="cube__face cube__face--bottom">
+              <div><img src="http://127.0.0.1:3000/assets/ghostError-a958d8ec177c45cd1dd143b54ab05ad713a6478ab3a63ce7d1579d007b1a0f14.gif" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="error_nav" href="http://127.0.0.1:3000/">
+      <img alt="Pulgamecanica&#39;s icon" class="icon" src="http://127.0.0.1:3000/assets/author_img-6c347d0d000122598772647edff0f8334b34f6b9cd24498f5fd7a352f3af281a.jpg" width="100" height="100" />
+      <h1>Pulgamecanica's Blog</h1>
+</a>    <div class="container">
+      <div class="not-found">
+	<h1>404 Not Found Error</h1>
+</div>
+<div class="posts">
+	<h2>Visit my posts</h2>
+	<div class="gallery">
+    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/how-i-run-my-cub3d-in-the-web">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/a4fea4e2-Screenshot_from_2025-09-05_05-33-57.png" width="150" height="100" />
+				<h3 class="gallery-title">How I run my cub3d in the web</h3>
+				<hr>
+				<p class="gallery-description">This walk-through will show you how I managed to run my cub3d (in C with mlx) into the web.</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/mlx42-in-the-web-tutorial">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/83cc02d4-Screenshot_from_2025-06-30_19-06-18.png" width="150" height="100" />
+				<h3 class="gallery-title">MLX42 in the web Tutorial</h3>
+				<hr>
+				<p class="gallery-description">Tutorial explaining all steps to publish your mlx42 code to the web for free.</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/c-in-the-web">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/67c42a44-ChatGPT_Image_Jun_25_2025_03_36_06_PM.png" width="150" height="100" />
+				<h3 class="gallery-title">C Game in the Browser</h3>
+				<hr>
+				<p class="gallery-description">Any game developed in C using MLX42 is playable in any browser using WebAssembly, Emscripten, and GitHub Pages. Try it yourself now!</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/torus-bagel">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/5c177853-Screenshot_from_2025-06-21_11-48-30.png" width="150" height="100" />
+				<h3 class="gallery-title">Torus &quot;Bagel&quot;</h3>
+				<hr>
+				<p class="gallery-description">Ever wondered how a 2D grid map—like in Pac-Man—can be wrapped around a 3D object like a doughnut? In this post, we’ll explore toroidal geometry, learn how to map grid tiles onto a torus, and show how to simulate camera rotation on this ‘bagel’ world.</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/frame-transitions">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/f05d1090-ScreencastFrom2024-11-0814-24-57-ezgif.com-video-to-gif-converter.gif" width="150" height="100" />
+				<h3 class="gallery-title">Frame Transitions</h3>
+				<hr>
+				<p class="gallery-description">Have you ever wondered how games transition from one frame to another?</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/rails-design-governance">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/38286547-the-rails-doctrine-v0-qrkMLCmkRzBuKMoWEZp3CNm_d3uTRJpbjv1OFByZ0Tg.png" width="150" height="100" />
+				<h3 class="gallery-title">Rails design governance</h3>
+				<hr>
+				<p class="gallery-description">In this post I will discuss why it is important to maintain a good design and order when it comes to separating different areas of your website which have different designs.</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/mlx42-game-development">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/7eed2cfc-scrn.gif" width="150" height="100" />
+				<h3 class="gallery-title">MLX42 - Game Development</h3>
+				<hr>
+				<p class="gallery-description">I will guide you through some game dynamics.
+This is the continuation of MLX42 - Intro</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/mlx42-intro">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/08125818-bg_img.png" width="150" height="100" />
+				<h3 class="gallery-title">MLX42 - Intro</h3>
+				<hr>
+				<p class="gallery-description">Learn how to use the brand new mlx library, baked in CODAM just for you!</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/docker-django">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/d22f6262-thumbnail.jpg" width="150" height="100" />
+				<h3 class="gallery-title">Docker Django</h3>
+				<hr>
+				<p class="gallery-description">How to Dockerize your Django Project with PostgreSQL</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/django-basics">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/983eb52a-django-logo-negative.1d528e2cb5fb.png" width="150" height="100" />
+				<h3 class="gallery-title">Django Basics</h3>
+				<hr>
+				<p class="gallery-description">How to Develop a Basic Django application</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/makefiles">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/f8ea0e7e-gnuMake.png" width="150" height="100" />
+				<h3 class="gallery-title">Easy Makefiles</h3>
+				<hr>
+				<p class="gallery-description">How to create an ideal Makefile for your 42 project?
+Understand and become a master of make!</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/42api-projects">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/f4106ed0-Screenshot_2023-03-29_at_15.30.58.png" width="150" height="100" />
+				<h3 class="gallery-title">42API Projects</h3>
+				<hr>
+				<p class="gallery-description">In this tutorial we will explore how to fetch information from 42API using Ruby.</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/mlx-transparency">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/5309edd3-shutterstock_257329417.jpg" width="150" height="100" />
+				<h3 class="gallery-title">MLX Transparency</h3>
+				<hr>
+				<p class="gallery-description">This guide will explain how to implement transparency with the minilibx library</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/mlx-animations">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/84745d35-fox.gif" width="150" height="100" />
+				<h3 class="gallery-title">MLX Animations</h3>
+				<hr>
+				<p class="gallery-description">In this tutorial we will explore a simple approach to create animations using minilibx :)</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/costa-vicentina">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/adf40f9f-CostaVicentina.jpeg" width="150" height="100" />
+				<h3 class="gallery-title">Costa Vicentina</h3>
+				<hr>
+				<p class="gallery-description">Hitchhiking on the west coast of Portugal</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/snakemlx">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/f7de4f48-snakeGamePortrait.jpeg" width="150" height="100" />
+				<h3 class="gallery-title">SnakeMLX</h3>
+				<hr>
+				<p class="gallery-description">This is a challenge for anyone who wants to have fun!
+Cheers and GL!</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/raycasting">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/b86b54ff-Screenshot_2022-12-28_at_23.43.55.png" width="150" height="100" />
+				<h3 class="gallery-title">Raycasting</h3>
+				<hr>
+				<p class="gallery-description">Raycasting is a basic rendering algorithm</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/minilibx-tutorial">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/dca5ddd3-combine_images-removebg-preview.png" width="150" height="100" />
+				<h3 class="gallery-title">Minilibx Tutorial</h3>
+				<hr>
+				<p class="gallery-description">Create a canvas to paint! 
+[no malloc]</p>
+</a>    		<a class="gallery-item" href="http://127.0.0.1:3000/posts/mlx-starter-pack">
+	      			<img alt="post image" class="gallery-image" src="http://127.0.0.1:3000media/cc932825-mlxLogo.png" width="150" height="100" />
+				<h3 class="gallery-title">MLX Starter Pack</h3>
+				<hr>
+				<p class="gallery-description">Scaffold for any MLX project</p>
+</a>	</div>
+</div>
+
+    </div>
+  </body>
+</html>
+
